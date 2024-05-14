@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { HousingService } from '../housing.service';
-import { HousingLocation } from '../housinglocation';
+import { ProjectService } from '../project.service';
+import { Project } from '../project';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -14,18 +14,22 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   ],
   template: `
   <article>
-    <img class="listing-photo" [src]="housingLocation?.photo"
-      alt="Exterior photo of {{housingLocation?.name}}"/>
+    <img class="listing-photo" [src]="project?.photo"
+      alt="Photo for project {{project?.title}}"/>
     <section class="listing-description">
-      <h2 class="listing-heading">{{housingLocation?.name}}</h2>
-      <p class="listing-location">{{housingLocation?.city}}, {{housingLocation?.state}}</p>
+      <h2 class="listing-heading">{{project?.title}}</h2>
+      <p class="listing-location">{{project?.company}}, {{project?.summary}}</p>
     </section>
     <section class="listing-features">
-      <h2 class="section-heading">About this housing location</h2>
+      <h2 class="section-heading">Project details</h2>
+      <p>{{project?.detail}}</p>
+      <h2 class="section-heading">Tasks</h2>
       <ul>
-        <li>Units available: {{housingLocation?.availableUnits}}</li>
-        <li>Does this location have wifi: {{housingLocation?.wifi}}</li>
-        <li>Does this location have laundry: {{housingLocation?.laundry}}</li>
+        <li *ngFor="let task of project?.tasks">{{task}}</li>
+      </ul>
+      <h2 class="section-heading">Toolbox</h2>
+      <ul>
+        <li *ngFor="let tool of project?.toolbox">{{tool}}</li>
       </ul>
     </section>
     <section class="listing-apply">
@@ -49,8 +53,8 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export class DetailsComponent {
   private route: ActivatedRoute = inject(ActivatedRoute);
-  private housingService: HousingService = inject(HousingService);
-  housingLocation: HousingLocation | undefined;
+  private projectService: ProjectService = inject(ProjectService);
+  project: Project | undefined;
 
   applyForm = new FormGroup({
     firstName: new FormControl(''),
@@ -59,17 +63,17 @@ export class DetailsComponent {
   });
 
   public constructor() {
-    const housingLocationId = Number(this.route.snapshot.params['id'])
+    const projectId = Number(this.route.snapshot.params['id'])
 
-    this.housingService.getHousingLocationById(housingLocationId)
-    .then((housingLocation) => {
-      this.housingLocation = housingLocation;
+    this.projectService.getProjectById(projectId)
+    .then((project) => {
+      this.project = project;
     });
 
   }
 
   public submitApplication() {
-    this.housingService.submitApplication(
+    this.projectService.submitApplication(
       this.applyForm.value.firstName ?? '',
       this.applyForm.value.lastName ?? '',
       this.applyForm.value.email ?? ''

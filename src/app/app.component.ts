@@ -25,5 +25,5 @@ import { RouterModule } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'homes';
+  title = 'ninjatic.engineer';
 }

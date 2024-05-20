@@ -6,7 +6,57 @@ header {
   height: 60px;
   padding: var(--content-padding);
   box-shadow: 0px 5px 25px var(--shadow-color);
+  margin-top: 3ex;
+  margin-left: 5ex;
+  margin-bottom: 1ex;
 }
 .content {
   padding: var(--content-padding);
+}
+
+
+.typed-out-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.typed-out {
+  color: var(--secondary-color);
+  font-size: 24px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+      typing 1.5s steps(10, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0
+  }
+
+  to {
+      width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+      border-color: transparent
+  }
+
+  50% {
+      border-color: orange;
+  }
 }

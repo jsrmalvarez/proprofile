@@ -33,9 +33,7 @@ import { ContactComponent } from '../contact/contact.component';
         <li *ngFor="let tool of project?.tools">{{tool}}</li>
       </ul>
     </section>
-    <section class="listing-apply">
-      <app-contact />
-    </section>
+    <app-contact />
   </article>
 `,
 

@@ -13,7 +13,9 @@ import { RouterModule } from '@angular/router';
   <main>
     <a [routerLink]="['/']">
     <header class="brand-name">
-      <img class="brand-logo"  src="assets/logo.svg" alt="logo" aria-hidden="true" />
+      <div class="typed-out-container">
+        <div class="typed-out">ninjatic.engineer</div>
+      </div>
     </header>
     </a>
     <section class="content">

@@ -17,6 +17,7 @@
 
 .contactMail {
     vertical-align: middle;
+    font-size: 14px;
 
 }
 
@@ -28,7 +29,7 @@
 
 .typed-out {
     color: var(--primary-color);
-    font-size: 18px;
+    font-size: 14px;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange;
@@ -40,7 +41,7 @@
     letter-spacing: .15em;
     /* Adjust as needed */
     animation:
-        typing 1.5s steps(10, end),
+        typing 2s steps(20, end),
         blink-caret .75s step-end infinite;
 }
 
@@ -138,11 +139,22 @@ input {
     font-size: 16pt;
     margin-bottom: 15px;
     padding: 10px;
-    width: 400px;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: solid .3px;
+}
+
+@media only screen and (max-width: 575px) {
+    input {
+        width: 200px;
+    }
+}
+
+@media only screen and (mix-width: 575px) {
+    input {
+        width: 350px;
+    }
 }
 
 @media (max-width: 1024px) {

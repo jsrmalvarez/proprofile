@@ -1,6 +1,6 @@
 article {
   margin: 0 auto;
-  width: 70%;
+  width: 50%;
 }
 
 .listing-photo {
@@ -17,10 +17,6 @@ article {
   margin-top: 15px;
   margin-bottom: 15px;
   color: var(--primary-color)
-}
-
-.listing-location::before {
-  content: url('/assets/location-pin.svg') / '';
 }
 
 .listing-location {

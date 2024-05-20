@@ -1,46 +1,71 @@
-.border {
-    border: 1px solid var(--primary-color);
-    align-items: center;
+@media only screen and (max-width: 575px) {
+    .container {
+        margin-left: -25px;
+    }
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+@media only screen and (mix-width: 575px) {
+    .container {
+        margin-left: 0px;
+    }
+}
+
+.container{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .contactMail {
-    display: flex;
-    justify-content: right;
-    margin-bottom: 1ex;
-    margin-right: 2ex;
-    font-size: 14px;
+    vertical-align: middle;
+
 }
 
-.typewriter h2 {
+.typed-out-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2ex;
+}
+
+.typed-out {
+    color: var(--primary-color);
     font-size: 18px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
     animation:
-      typing 1.5s steps(10, end),
-      blink-caret .75s step-end infinite;
-  }
+        typing 1.5s steps(10, end),
+        blink-caret .75s step-end infinite;
+}
 
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+@keyframes typing {
+    from {
+        width: 0
+    }
 
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
 
 
 article {
@@ -64,9 +89,6 @@ article {
     color: var(--primary-color)
 }
 
-.listing-location::before {
-    content: url('/assets/location-pin.svg') / '';
-}
 
 .listing-location {
     font-size: 18pt;

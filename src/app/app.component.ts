@@ -20,6 +20,7 @@ import { RouterModule } from '@angular/router';
       <router-outlet></router-outlet>
     </section>
   </main>
+  <div style="width: 100%; height: 5em;"></div>
   `,
   styleUrls: ['./app.component.css'],
 })

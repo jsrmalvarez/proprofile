@@ -23,14 +23,15 @@
             "tools": [
                 "CI/CD",
                 "UI/UX Design",
-                "Prototyping (Mock-up)",
+                "Prototyping",
                 "Azure DevOps",
                 "Raspberry Pi",
                 "ZigBee",
                 "Qt",
                 "Qt QML",
                 "C++",
-                "Jira / Confluence (Atlassian)"
+                "Jira",
+                "Confluence"
             ]
         },
         {
@@ -51,7 +52,7 @@
                 "Semantic UI",
                 "Solidity",
                 "web3",
-                "React (JS)",
+                "React",
                 "Rust",
                 "WebAssembly",
                 "Smart contracts",

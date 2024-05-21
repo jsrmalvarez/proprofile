@@ -3,9 +3,13 @@ article {
   width: 50%;
 }
 
+.detail-paragraph{
+  margin-bottom: 2ex;
+}
+
 .listing-photo {
   max-height: 300px;
-  width: 30%;
+  width: 50%;
   object-fit: cover;
   border-radius: 0px;
   float: right;

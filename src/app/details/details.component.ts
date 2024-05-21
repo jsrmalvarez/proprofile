@@ -21,7 +21,7 @@ import { ContactComponent } from '../contact/contact.component';
     </section>
     <section class="listing-features">
       <h2 class="section-heading">Project details</h2>
-      <p>{{project?.detail}}</p>
+      <p  class="detail-paragraph" *ngFor="let paragraph of detailParagraphs">{{paragraph}}</p>
       <img class="listing-photo" [src]="project?.photo"
       alt="Photo for project {{project?.title}}"/>
       <h2 class="section-heading">Tasks</h2>
@@ -43,6 +43,7 @@ export class DetailsComponent {
   private route: ActivatedRoute = inject(ActivatedRoute);
   private projectService: ProjectService = inject(ProjectService);
   project: Project | undefined;
+  detailParagraphs: string[] = [];
 
   public constructor() {
     const projectId = Number(this.route.snapshot.params['id'])
@@ -50,6 +51,10 @@ export class DetailsComponent {
     this.projectService.getProjectById(projectId)
     .then((project) => {
       this.project = project;
+      if(project){
+        this.detailParagraphs = project.detail.split('.');
+        this.detailParagraphs = this.detailParagraphs.map(paragraph => paragraph.trim() + ".").filter(paragraph => paragraph !== ".");
+      }
     });
 
   }

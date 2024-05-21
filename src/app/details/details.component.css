@@ -1,6 +1,23 @@
 article {
   margin: 0 auto;
-  width: 50%;
+}
+
+@media (max-width: 375px) {
+  article {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  article {
+    width: 70%;
+  }
+}
+
+@media (min-width: 800px) {
+  article {
+    width: 60%;
+  }
 }
 
 .detail-paragraph{

@@ -17,12 +17,16 @@
     padding: 10px 20px 20px 20px;
   }
 
-  section.listing a {
+  section.listing .learn-more {
     padding-left: 20px;
     text-decoration: none;
     color: var(--tertiary-color);
   }
-  section.listing a::after {
+  section.listing .learn-more::after {
     content: "\203A";
     margin-left: 5px;
+  }
+
+  .clickable{
+    cursor: pointer;
   }

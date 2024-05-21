@@ -1,0 +1,11 @@
+<!-- image-modal.component.html -->
+<img src="{{ imageUrl }}" alt="Clickable Image" class="clickable-image" (click)="openModal()" style="cursor: pointer;">
+
+<!-- The Modal -->
+<div *ngIf="showModal" class="modal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img [src]="imageUrl" class="full-image">
+    <div class="caption">{{ imageCaption }}</div>
+  </div>
+</div>

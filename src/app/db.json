@@ -4,7 +4,7 @@
             "id": 0,
             "title": "Control System for Office Domotics",
             "photo": "assets/WindowBlinds.jpg",
-            "company": "Embedded Systems",
+            "company": "Embedded Systems, QT, MQTT, Voice Control",
             "summary": "Implementation of a Customizable and Scalable Voice Controlled Automation Control System for Office Domotics",
             "detail": "The project aims to transform existing manually controlled office domotics into an advanced system capable of remote control, automation, and voice control. By integrating control hardware featuring networking capabilities and a touchscreen interface, the project enhances operational efficiency and convenience. This system is designed to be scalable, allowing for the addition of more ZigBee actuators to accommodate varying needs. It also excels in data acquisition, capable of collecting information from sensors and streaming real-time data for advanced processing. A key highlight of this upgrade is the development of a modern and innovative user interface (UI). This UI cleverly blends reusable components with custom elements tailored to specific locations, ensuring a user-friendly experience that enhances interaction with the office environment. Additionally, the system includes voice control capabilities with one-shot inference based word detection, speech-to-text (STT), and natural language processing (NLP), further enhancing the ease of use and interaction with the system.",
             "tasks": [
@@ -23,6 +23,7 @@
                 "UI/UX Design",
                 "Prototyping",
                 "Azure DevOps",
+                "Azure IoT Hub",
                 "Raspberry Pi",
                 "MQTT",
                 "ZigBee",
@@ -31,6 +32,8 @@
                 "QML",
                 "Jira",
                 "Confluence",
+                "Plant UML",
+                "UML",
                 "C++",
                 "Python",
                 "PyTorch",
@@ -39,14 +42,17 @@
                 "Visual Studio Code",
                 "QT Creator",
                 "Git",
-                "GitHub"
+                "CMake",
+                "GitHub",
+                "Linux",
+                "Bash scripting"
             ]
         },
         {
             "id": 1,
             "title": "CherishedLoveLocks",
             "photo": "assets/CherishedLoveLocks.png",
-            "company": "web3",
+            "company": "Full Stack, web3",
             "summary": "Innovative Web3 dApp for Metaverse-Integrated NFTs",
             "detail": "The aim of this project is to develop a Web3 decentralized application (dApp) that introduces a new generation of NFTs (Non-Fungible Tokens) designed specifically for the metaverse. These NFT goods will transcend traditional collectibles by offering interactive, immersive, and utility-driven experiences in virtual environments. The project is focused on creating NFTs that can be used in various metaverse platforms, enhancing user engagement through unique digital assets that offer more than aesthetic value. The project will explore innovative ways to integrate these NFTs into the metaverse, ensuring they are versatile, interactive, and provide real-world utility, thereby setting a new standard for digital ownership.",
             "tasks": [
@@ -62,6 +68,7 @@
                 "Semantic UI",
                 "NextJs",
                 "React",
+                "node",
                 "Solidity",
                 "web3",
                 "Smart contracts",
@@ -84,7 +91,6 @@
             "tasks": [
                 "Algorith definition",
                 "Requirements gathering",
-                "In charge of the DevOps of the project: Manage the DevOps strategy, optimizing development and operational processes for efficiency, reliability, and faster delivery through automation and continuous integration.",
                 "Feedback management"
             ],
             "tools": [
@@ -93,8 +99,166 @@
                 "Optics",
                 "C",
                 "SVN",
-                "Subversion"
+                "Subversion",
+                "STM32",
+                "STM32 Cube IDE",
+                "STM32 CubeMx"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "VideoIP-X-Point",
+            "photo": "assets/VideoIPXPoint.jpg",
+            "company": "Broadcast, Visual Tools",
+            "summary": "Desktop App for Simplified Sivac, Xavic, and Altum Encoder/Decoder Network Setup",
+            "detail": "The project involves the design and development of a user-friendly desktop application aimed at enabling operators to seamlessly connect and configure Sivac, Xavic, and Altum encoder/decoder pairs over an IP network. The application is designed to simplify the process of building a video delivery network by abstracting the complexities of network protocols. Operators, regardless of their expertise in network protocols, will be able to use this application to efficiently set up and manage video streaming and encoding/decoding functions. The application will feature intuitive interfaces, guided setup processes, and automated configuration tools to ensure ease of use. Additionally, it will include diagnostic and monitoring capabilities to help operators maintain optimal network performance. This project aims to democratize access to advanced video network setup, making it accessible and manageable for users with varying levels of technical skills.",
+            "tasks": [
+                "Features implementation",
+                "Requirements gathering",
+                "Feedback management",
+                "Testing"
+            ],
+            "tools": [
+                "Java",
+                "Java FX",
+                "SQL Server",
+                "JDBC",
+                "XML",
+                "Swing",
+                "Net Beans",
+                "Sentinel HASP",
+                "C++",
+                "VLC"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Modern C++ based framework for automated coffee roaster",
+            "photo": "assets/CoffeeRoaster.jpg",
+            "company": "Embedded Systems, Process Automation",
+            "summary": "Automated Expert-Level Coffee Roasting Machine Development",
+            "detail": "Design and create a modern C++ based automated coffee roasting machine capable of replicating the precision and quality of an expert roaster. This machine utilize advanced algorithms to follow specific roasting recipes, ensuring consistent high-quality coffee production. The project encompasses developing user-friendly interfaces for recipe customization, integrating sensory feedback systems for quality control, and achieving efficient energy use to make the roasting process sustainable and scalable.",
+            "tasks": [
+                "Software Development",
+                "Requirements refinement",
+                "Testbench customization",
+                "Software Architecture",
+                "POC demo",
+                "Documentation"
+            ],
+            "tools": [
+                "C++",
+                "Qt",
+                "QtQuick",
+                "QML",
+                "Python",
+                "Jira",
+                "Confluence",
+                "Plant UML",
+                "UML",
+                "CMake",
+                "Visual Studio Code",
+                "QT Creator",
+                "Git",
+                "GitLab",
+                "Linux",
+                "Bash scripting"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Next Generation infusion pump family",
+            "photo": "assets/InfusionPump.jpg",
+            "company": "Embedded Systems, Medical Devices",
+            "summary": "Create a family of Next Gen products of scalable and user-friendly Infusion Pumps",
+            "detail": "This project aims to develop a cutting-edge generation of infusion pumps, emphasizing scalability, user-friendliness, and strict adherence to medical standards. Key features include an innovative user interface designed for intuitive operation, automatic setting adjustments for connected accessories, and seamless integration with patient management databases. The project's focus is not only on technological advancement but also on enhancing the ease of use for medical staff, ensuring patient safety, and improving the efficiency of medical procedures. The ultimate goal is to deliver a product that simplifies workflow, meets the highest medical standards, and provides a more personalized and responsive patient care experience.",
+            "tasks": [
+                "Software Development",
+                "Requirements refinement",
+                "Testbench customization",
+                "Component Specification",
+                "Documentation"
+            ],
+            "tools": [
+                "C++",
+                "Qt",
+                "QtQuick",
+                "QML",
+                "Siemens Polarion ALM",
+                "Plant UML",
+                "UML",
+                "CMake",
+                "ARM Cortex",
+                "STM32",
+                "STM32 Cube IDE",
+                "STM32 CubeMx",
+                "FreeRTOS",
+                "QT Creator",
+                "Git",
+                "GitLab",
+                "Linux",
+                "Bash scripting"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Multisensor Target Acquisition Devices Development",
+            "photo": "assets/TAD.jpg",
+            "company": "Embedded Systems, Defense",
+            "summary": "Comprehensive family of Multisensor Target Acquisition Devices",
+            "detail": "The project's objective is to develop a comprehensive family of multisensor target acquisition devices, integrating various sensing technologies including thermal imaging, visible light imaging, Laser Range Finder (LRF), Global Navigation Satellite System (GNSS), and 9-Degree of Freedom (9DOF) sensors. This integration aims to create highly sophisticated and versatile devices capable of performing in diverse environments and scenarios. The focus is on engineering these devices to provide accurate and real-time data for target acquisition, leveraging the combined strengths of each sensing technology. The project encompasses designing robust and user-friendly interfaces, ensuring the interoperability of the sensors, and optimizing the overall performance and reliability of the devices for use in critical applications.",
+            "tasks": [
+                "Software Development",
+                "Hardware Design Assistance",
+                "Production Staff Training",
+                "Component Specification",
+                "Documentation"
+            ],
+            "tools": [
+                "C",
+                "STM32",
+                "STM32 Cube IDE",
+                "STM32 CubeMx",
+                "RTOS",
+                "Git",
+                "GNNS",
+                "GPS",
+                "NMEA",
+                "LRF",
+                "9-DOF",
+                "DMC",
+                "Optics"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Broadcast Equipment Family",
+            "photo": "assets/rack.jpg",
+            "company": "Embedded Systems, Web, Network, Video, Broadcast",
+            "summary": "Comprehensive family of Professional Video Encoders, Decoders, Multiplexers and Modulators",
+            "detail": "This comprehensive project aims to develop a versatile family of professional video encoders, decoders, multiplexers, and RF modulators, addressing the diverse needs of modern broadcasting and media industries. Central to this initiative is enhancing an encoder/modulator system with the integration of an ATSC modulator, implementing SCPI protocol over UDP for efficient control, and interfacing with an RF amplifier to ensure high-quality modulation and improved performance. The project also focuses on integrating Simulcrypt functionality into the encoders and decoders, enabling support for multiple conditional access systems and secure content distribution across various pay-TV operators. Additionally, the reimplementation of the SNMPv2 agent will enhance network management capabilities, improving remote device monitoring and control. Expanding the system's capabilities further, the integration of DVB-S and DVB-S2 modulators will ensure seamless operation within advanced satellite broadcasting standards. The project also involves incorporating a video multiplexer developed by a partner company, enhancing the infrastructure's video processing and distribution capabilities. This integration will offer versatile and robust solutions to meet the evolving needs of the broadcasting and media industries.",
+            "tasks": [
+                "Software Development",
+                "Hardware Design Assistance",
+                "Production Staff Training",
+                "Component Specification",
+                "Documentation"
+            ],
+            "tools": [
+                "C++",
+                "Java",
+                "Javascript",
+                "HTML",
+                "CSS",
+                "RTOS",
+                "Symulcrypt",
+                "BISS",
+                "MPEG-TS",
+                "SNMP",
+                "SQL Server",
+                "VLC"
             ]
         }
+
     ]
 }

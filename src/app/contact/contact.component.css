@@ -151,7 +151,7 @@ input {
     }
 }
 
-@media only screen and (mix-width: 575px) {
+@media only screen and (min-width: 575px) {
     input {
         width: 350px;
     }

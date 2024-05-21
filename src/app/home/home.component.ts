@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectComponent } from '../project/project.component';
+import { ContactComponent } from '../contact/contact.component';
 import { ToolComponent } from '../tool/tool.component';
 import { ProjectService } from '../project.service';
 import { ToolboxService } from '../toolbox.service';
@@ -14,28 +15,38 @@ import { Tool } from '../tool';
   imports: [
     CommonModule,
     ProjectComponent,
+    ContactComponent,
     ToolComponent],
   template: `
+  <article>
     <section>
-      <form>
+      <!--<form>
         <input type="text" placeholder="Filter by city" #filter/>
         <button class="primary" type="button"
           (click)="filterResults(filter.value)"
            >Search</button>
-      </form>
+      </form>-->
     </section>
-    <section class="results">
-      <app-tool
-        *ngFor="let tool of toolbox"
-        [tool]="tool">
-      </app-tool>
-    </section>
+
+    <h2>My portfolio</h2>
     <section class="results">
       <app-project
         *ngFor="let project of filteredProjectList"
         [project]="project">
       </app-project>
     </section>
+
+    <app-contact />
+
+    <h2>My toolbox</h2>
+    <section class="results">
+      <app-tool
+        *ngFor="let tool of toolbox"
+        [tool]="tool">
+      </app-tool>
+    </section>
+
+    </article>
   `,
   styleUrl: './home.component.css'
 })

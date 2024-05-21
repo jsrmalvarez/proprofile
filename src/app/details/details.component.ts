@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../project.service';
 import { Project } from '../project';
 import { ContactComponent } from '../contact/contact.component';
+import { ImageModalComponent } from '../image-modal/image-modal.component';
 
 @Component({
   selector: 'app-details',
@@ -11,19 +12,20 @@ import { ContactComponent } from '../contact/contact.component';
   imports: [
     CommonModule,
     ContactComponent,
+    ImageModalComponent,
   ],
   template: `
   <article>
 
     <section class="listing-description">
       <h2 class="listing-heading">{{project?.title}}</h2>
-      <p class="listing-location">{{project?.company}}, {{project?.summary}}</p>
+      <h3 class="listing-location">{{ project?.company}}</h3>
+      <p class="listing-location">{{project?.summary}}</p>
     </section>
     <section class="listing-features">
       <h2 class="section-heading">Project details</h2>
       <p  class="detail-paragraph" *ngFor="let paragraph of detailParagraphs">{{paragraph}}</p>
-      <img class="listing-photo" [src]="project?.photo"
-      alt="Photo for project {{project?.title}}"/>
+      <app-image-modal [imageUrl]="project?.photo" [imageCaption]="project?.title"></app-image-modal>
       <h2 class="section-heading">Tasks</h2>
       <ul>
         <li *ngFor="let task of project?.tasks">{{task}}</li>

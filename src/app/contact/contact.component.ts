@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
         <div class="typed-out-container">
             <div class="typed-out">Tell me about your project!</div>
         </div>
-        <a class="contactMail" mailto="jsrmalvarez@ninjatic.engineer">jsrmalvarez&#64;ninjatic.engineer</a>
+        <a class="contactMail" href="mailto:jsrmalvarez@ninjatic.engineer">jsrmalvarez&#64;ninjatic.engineer</a>
     </div>
     `,
 

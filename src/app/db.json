@@ -25,6 +25,7 @@
                 "Azure DevOps",
                 "Azure IoT Hub",
                 "Raspberry Pi",
+                "Docker",
                 "MQTT",
                 "ZigBee",
                 "Qt",
@@ -78,7 +79,8 @@
                 "Truffle",
                 "SVG",
                 "Git",
-                "GitHub"
+                "GitHub",
+                "Docker"
             ]
         },
         {
